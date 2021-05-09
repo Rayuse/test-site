@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ----- HEADINGS ----- */
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+     color: #fff;
+}
+
+h1 {
+    margin: 0 0 0 20;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* -------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    margin: 0 auto;
+    padding: 150px 0 50px 0;
+    max-width: 1140px;
+    min-width: 480px;
+    text-align: center;
+}
+
+.quiz-box {
+    background-color: rgba(240, 248, 255, 0.31);
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    max-width: 620px;
+    min-width: 480px;
+    text-align: center;
+}
+
+.controls {
+    padding-top: 25px;
+}
+
+/* ----- BUTTONS ----- */
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px, 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 2px solid #e67e22;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: #fff;
+    color: #000;
+    margin: 0 25px 25px 25px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+    border: 2px solid #1796cf;
+    color: #fff;
+}
+
+.btn.correct {
+    background-color: forestgreen;
+    color: aliceblue;s
+}
+
+.btn.wrong {
+    background-color: red;
+    color: aliceblue;
+}
+
+.hide {
+    display: none !important;
+}
